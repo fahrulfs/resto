@@ -181,7 +181,7 @@ tabs.forEach(tab => {
 
     // filtering 
     const tabItem = tab.getAttribute('data-tabs');
-    all.forEach(item => {
+    all.forEach((item) => {
       item.style.display = 'none';
     });
 
