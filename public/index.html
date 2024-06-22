@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Swiper's CSS -->
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/logo/logo-2-light.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <title>Momong Resto | ENAK GAK HARUS MAHAL</title>
+
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class=" fixed top-0 left-0 w-full z-30 shadow-sm ">
+        <nav class="capitalize container relative h-14 flex justify-between items-center py-2 lg:py-9">
+            <!-- logo -->
+            <div class="flex flex-row lg:flex-col justify-center items-center">
+                <a href="#"><img src="assets/logo/logo-2-dark.png" alt="" class="w-[45px] hidden lg:flex"></a>
+                <a href="#"><img src="assets/logo/logo-4-dark.png" alt="" class="w-[95px] hidden lg:flex"></a>
+                <a href="#"><img src="assets/logo/logo-dark.png" alt="" class="w-[200px] lg:hidden"></a>
+            </div>
+            <!-- logo -->
+
+            <div id="nav-menu"
+                class="absolute w-full bg-primaryColorAccent  dark:bg-darkColor dark:lg:bg-transparent lg:bg-transparent font-normal text-sm md:text-base lg:font-normal lg:text-base shadow-md lg:shadow-none top-full hidden px-4 md:px-8 lg:px-0 left-0  py-3 lg:flex lg:static lg:justify-end lg:py-0 lg:w-full">
+                <ul
+                    class="nav-links flex flex-col w-full  lg:items-center lg:justify-end gap-4 lg:flex-row text-center lg:text-base text-[18px]  uppercase mx-0">
+                    <li>
+                        <a href="#home"
+                            class="nav-link text-secondaryColor hover:text-secondaryColor ease-linear duration-200">home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link hover:text-secondaryColor ease-linear duration-200">tentang</a>
+                    </li>
+                    <li>
+                        <a href="#fasilitas"
+                            class="nav-link hover:text-secondaryColor ease-linear duration-200">fasilitas</a>
+                    </li>
+                    <li>
+                        <a href="#layanan"
+                            class="nav-link hover:text-secondaryColor ease-linear duration-200">layanan</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav-link hover:text-secondaryColor ease-linear duration-200">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#kontak"
+                            class=" nav-link hover:text-secondaryColor after: ease-linear duration-200 lg:border-e lg:pe-2 ">kontak</a>
+                    </li>
+            </div>
+            </ul>
+            </div>
+
+            <div id="moon"
+                class=" flex h-9 w-10 hover:scale-105 duration-100 shadow-lg cursor-pointer rounded-full justify-center items-center lg:me-0 me-10 ms-2">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" class="h-5 w-5 sun block dark:hidden fill-white"
+                    y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path
+                                d="M509.408,338.986c-2.485-2.302-6.141-2.812-9.16-1.279c-34.164,17.341-71.04,26.133-109.605,26.133 c-25.757,0-51.112-4.016-75.359-11.936c-4.255-1.388-8.817,0.932-10.201,5.178c-1.387,4.246,0.93,8.814,5.177,10.201 c25.871,8.451,52.916,12.736,80.383,12.736c33.63,0,66.064-6.272,96.699-18.672C444.62,443.699,359.844,495.819,265.8,495.819 c-137.642,0-249.621-111.979-249.621-249.621c0-94.041,52.119-178.817,134.471-221.538 c-12.403,30.637-18.673,63.066-18.673,96.696c0,50.709,14.671,99.812,42.427,141.996c27.049,41.111,64.982,73.538,109.696,93.776 c4.076,1.842,8.865,0.035,10.706-4.035c1.842-4.07,0.036-8.863-4.034-10.705c-86.637-39.209-142.616-125.969-142.616-221.032 c0-38.562,8.793-75.438,26.133-109.602c1.533-3.02,1.022-6.675-1.279-9.16c-2.304-2.485-5.911-3.272-9.035-1.974 C116.026,20.523,75.196,53.803,45.893,96.865C15.87,140.987,0,192.625,0,246.198c0,70.997,27.648,137.746,77.851,187.949 c50.204,50.203,116.952,77.85,187.949,77.85c53.574,0,105.212-15.87,149.336-45.895c43.06-29.302,76.342-70.134,96.245-118.081 C512.68,344.894,511.892,341.288,509.408,338.986z" />
+                        </g>
+                    </g>
+                </svg>
+
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    class="moon hidden dark:block h-5 w-5 dark:fill-white rounded-full active:block"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45.16 45.16"
+                    style="enable-background:new 0 0 45.16 45.16;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path
+                                d="M22.58,11.269c-6.237,0-11.311,5.075-11.311,11.312s5.074,11.312,11.311,11.312c6.236,0,11.311-5.074,11.311-11.312 S28.816,11.269,22.58,11.269z" />
+                            <g>
+                                <g>
+                                    <path
+                                        d="M22.58,7.944c-1.219,0-2.207-0.988-2.207-2.206V2.207C20.373,0.988,21.361,0,22.58,0c1.219,0,2.207,0.988,2.207,2.207 v3.531C24.787,6.956,23.798,7.944,22.58,7.944z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M22.58,37.215c-1.219,0-2.207,0.988-2.207,2.207v3.53c0,1.22,0.988,2.208,2.207,2.208c1.219,0,2.207-0.988,2.207-2.208 v-3.53C24.787,38.203,23.798,37.215,22.58,37.215z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M32.928,12.231c-0.861-0.862-0.861-2.259,0-3.121l2.497-2.497c0.861-0.861,2.259-0.861,3.121,0 c0.862,0.862,0.862,2.26,0,3.121l-2.497,2.497C35.188,13.093,33.791,13.093,32.928,12.231z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12.231,32.93c-0.862-0.863-2.259-0.863-3.121,0l-2.497,2.496c-0.861,0.861-0.862,2.26,0,3.121 c0.862,0.861,2.26,0.861,3.121,0l2.497-2.498C13.093,35.188,13.093,33.79,12.231,32.93z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M37.215,22.58c0-1.219,0.988-2.207,2.207-2.207h3.531c1.219,0,2.207,0.988,2.207,2.207c0,1.219-0.988,2.206-2.207,2.206 h-3.531C38.203,24.786,37.215,23.799,37.215,22.58z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M7.944,22.58c0-1.219-0.988-2.207-2.207-2.207h-3.53C0.988,20.373,0,21.361,0,22.58c0,1.219,0.988,2.206,2.207,2.206 h3.531C6.956,24.786,7.944,23.799,7.944,22.58z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M32.928,32.93c0.862-0.861,2.26-0.861,3.121,0l2.497,2.497c0.862,0.86,0.862,2.259,0,3.12s-2.259,0.861-3.121,0 l-2.497-2.497C32.066,35.188,32.066,33.791,32.928,32.93z" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12.231,12.231c0.862-0.862,0.862-2.259,0-3.121L9.734,6.614c-0.862-0.862-2.259-0.862-3.121,0 c-0.862,0.861-0.862,2.259,0,3.12l2.497,2.497C9.972,13.094,11.369,13.094,12.231,12.231z" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="lg:hidden absolute  top-[0.5rem] right-4 cursor-pointer">
+                <button type="button"
+                    class="size-9 flex justify-center items-center gap-x-2 text-sm font-semibold  disabled:opacity-50 disabled:pointer-events-none rounded-md"
+                    data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+                    aria-label="Toggle navigation">
+                    <svg id="hamburger" class="w-6 h-6 text-secondaryColor flex-shrink-0 size-4"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" x2="21" y1="6" y2="6" />
+                        <line x1="3" x2="21" y1="12" y2="12" />
+                        <line x1="3" x2="21" y1="18" y2="18" />
+                    </svg>
+                    <svg id="hamburger-close" class="h-6 w-6 hidden text-secondaryColor flex-shrink-0 size-4"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+
+    <main class="w-full mt-0">
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home" class="relative w-full h-dvh">
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="assets/bg-video.mp4" type="video/mp4">
+            </video>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-primaryColorAccent via-primaryColor to-primaryColor opacity-80 dark:bg-gradient-to-t dark:from-darkColorAccent to bg-darkColor :dark:opacity-85">
+            </div>
+            <div class="relative z-10 h-full flex items-center justify-center bg-fixed">
+                <div class="container text-center pt-8">
+                    <div class="">
+                        <h1 class="tittle-center section-tittle-dark home-content lg:px-48">
+                            selamat datang di momong resto
+                        </h1>
+                        <div class="tittle-center divider mt-5"></div>
+                        <p class="tittle-center section-parag-dark mt-5 home-content lg:px-80 px-9 ">Tempat kami
+                            menghadirkan cita
+                            rasa
+                            yang nikmat
+                            ke
+                            meja
+                            Anda.Setiap hidangan dipersiapkan dengan cinta dan keahlian, menggunakan bahan-bahan yang
+                            berkualitas
+                        </p>
+
+                        <div
+                            class="tittle-center-sec flex justify-center items-center lg:flex-row mt-5 gap-4  md:gap-20">
+                            <div class="flex flex-col items-center justify-center text-center w-fit p-2 rounded-md">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-10 h-10 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M454.976,43.056c-3.591-3.588-9.411-3.591-13.003,0l-95.329,95.326c-3.592,3.591-3.592,9.411-0.001,13.003 c1.796,1.795,4.148,2.692,6.502,2.692c2.352,0,4.706-0.897,6.502-2.692l95.329-95.326 C458.566,52.467,458.566,46.646,454.976,43.056z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M480.9,68.571c-3.592-3.589-9.412-3.589-13.003,0l-95.328,95.328c-3.59,3.592-3.59,9.412-0.001,13.003 c1.796,1.795,4.15,2.692,6.502,2.692c2.352,0,4.706-0.897,6.502-2.692L480.9,81.573C484.491,77.982,484.491,72.161,480.9,68.571z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M390.969,229.548L509.307,111.21c3.591-3.592,3.591-9.412,0-13.003c-3.592-3.588-9.412-3.591-13.003,0L377.968,216.545 c-14.579,14.578-36.871,18.403-55.47,9.521c-3.7-1.766-8.118-0.873-10.839,2.193l-40.209,45.303 c-0.016,0.017-0.034,0.032-0.05,0.05c-0.016,0.018-0.028,0.037-0.044,0.055L97.567,469.464c-0.044,0.05-0.088,0.101-0.131,0.152 c-0.573,0.673-1.114,1.264-1.662,1.813c-11.475,11.474-30.145,11.473-41.615,0c-5.558-5.557-8.619-12.948-8.619-20.808 s3.061-15.25,8.629-20.818c0.534-0.537,1.124-1.076,1.803-1.654c0.052-0.043,0.102-0.087,0.152-0.131l108.648-96.434 c3.798-3.371,4.143-9.182,0.773-12.979c-3.371-3.799-9.183-4.146-12.979-0.773L43.99,414.202 c-1.038,0.885-1.967,1.742-2.833,2.609c-9.031,9.031-14.005,21.038-14.005,33.81c0,12.771,4.973,24.779,14.004,33.81 c9.323,9.321,21.566,13.982,33.812,13.981c12.241,0,24.487-4.659,33.803-13.976c0.883-0.881,1.738-1.811,2.616-2.839 l132.432-149.206l132.434,149.208c0.877,1.029,1.732,1.959,2.609,2.834c9.321,9.321,21.565,13.981,33.809,13.981 c12.245,0,24.49-4.661,33.812-13.982c18.64-18.643,18.64-48.975,0.005-67.613c-0.88-0.883-1.811-1.738-2.838-2.615 l-152.391-135.26l29.815-33.592C345.231,253.911,372.565,247.949,390.969,229.548z M431.514,428.019 c0.05,0.044,0.101,0.088,0.152,0.131c0.673,0.573,1.264,1.114,1.813,1.662c11.473,11.474,11.473,30.143,0.001,41.615 c-11.475,11.473-30.144,11.473-41.622-0.005c-0.543-0.543-1.086-1.135-1.659-1.808c-0.043-0.051-0.087-0.102-0.131-0.152 L256.111,318.54l22.939-25.845L431.514,428.019z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M427.379,16.278c-3.592-3.589-9.412-3.589-13.003,0L296.04,134.617c-18.406,18.404-24.366,45.735-15.807,69.897 l-36.415,32.322l-34.998-31.064c18.099-35.612,11.492-78.851-17.222-107.566c-28.518-28.518-61.55-48.587-93.011-56.508 c-32.843-8.267-61.001-2.748-79.295,15.545s-23.814,46.455-15.545,79.296c7.922,31.459,27.99,64.491,56.51,93.008 c28.714,28.716,71.952,35.323,107.566,17.223c0,0,34.225,38.558,34.659,39.048c1.817,2.047,4.342,3.09,6.88,3.09 c2.171,0,4.349-0.764,6.1-2.318l81.866-72.664c3.065-2.721,3.958-7.141,2.193-10.839c-8.884-18.601-5.058-40.891,9.521-55.468 L427.379,29.281C430.97,25.689,430.97,19.869,427.379,16.278z M210.131,266.737l-33.468-37.706 c-2.964-3.339-7.902-4.069-11.702-1.722c-29.478,18.177-67.188,13.754-91.704-10.763c-26.204-26.203-44.557-56.21-51.68-84.497 c-6.625-26.317-2.819-48.267,10.718-61.803C45.83,56.708,67.78,52.904,94.096,59.53c28.287,7.122,58.296,25.474,84.498,51.678 c24.516,24.515,28.94,62.225,10.762,91.703c-2.344,3.801-1.617,8.737,1.722,11.702l38.888,34.516L210.131,266.737z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="section-parag-dark capitalize">enak</p>
+                            </div>
+                            <div class="flex flex-col items-center justify-center text-center w-fit p-2 rounded-md">
+                                <svg version="1.1" id="Capa_1" class="w-10 h-10 fill-secondaryColor"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 551.391 551.391"
+                                    style="enable-background:new 0 0 551.391 551.391;" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M413.695,0c0,0-45.366,44.014-94.43,61.759C-44.068,193.178,109.165,449.277,114.164,450.121 c0,0,20.374-35.48,47.896-55.717c174.644-128.389,210.14-276.171,210.14-276.171s-39.19,177.829-194.562,288.479 c-34.316,24.426-57.552,84.568-67.388,144.679c0,0,24.325-9.828,34.785-12.49c4.079-26.618,12.607-52.106,27.025-74.875 c217.151,25.854,288.272-149.123,297.563-210.136C491.552,109.79,413.695,0,413.695,0z" />
+                                    </g>
+                                </svg>
+                                <p class="section-parag-dark capitalize">bahan pilihan</p>
+                            </div>
+                            <div class="flex flex-col items-center justify-center text-center  w-fit p-2 rounded-md">
+                                <svg version="1.1" id="Layer_1" class="w-10 h-10 fill-secondaryColor"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 479.564 479.564"
+                                    style="enable-background:new 0 0 479.564 479.564;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M252.918,6.444c-5.984-8.592-20.304-8.592-26.288,0C220.646,15.068,79.782,218.86,79.782,308.492 c0,94.336,71.776,171.072,160,171.072s160-76.736,160-171.072C399.782,218.86,257.918,15.068,252.918,6.444z M239.782,447.564 c-70.576,0-128-62.384-128-139.072c0-59.664,82.96-196.704,128-264.432c45.04,67.712,128,204.736,128,264.432 C367.782,385.18,310.358,447.564,239.782,447.564z" />
+                                                <path
+                                                    d="M208.838,392.86c-9.52-4.32-18.08-10.48-25.424-18.352c-7.392-7.904-13.2-17.136-17.264-27.408 c-4.224-10.656-6.368-21.984-6.368-33.696c0-10.768,4.4-26.432,13.088-46.56c1.744-4.048-0.112-8.768-4.176-10.512 c-4.048-1.744-8.768,0.096-10.512,4.176c-9.696,22.448-14.4,39.76-14.4,52.896c0,13.728,2.512,27.04,7.472,39.584 c4.816,12.16,11.696,23.088,20.464,32.464c8.8,9.408,19.056,16.816,30.528,22c1.072,0.48,2.192,0.704,3.296,0.704 c3.04,0,5.968-1.744,7.296-4.704C214.662,399.436,212.87,394.684,208.838,392.86z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="section-parag-dark capitalize">segar</p>
+                            </div>
+                        </div>
+
+                        <div class="tittle-center-sec mt-8 gap-3 flex w-full text-center justify-center">
+                            <a class="w-fit btn btn_primary px-4  hover:scale-105" href="#menu">
+                                lihat menu
+                                <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                            <a class="w-fit px-4 btn btn_secondary text-white " href="#">
+                                reservasi
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+        <section id="about" class="bg-white dark:bg-darkColorAccent ">
+            <div class="container flex flex-col lg:flex-row gap-10 pb-10">
+
+
+                <div class="lg:basis-1/2 about-image flex items-center justify-center">
+                    <img loading="lazy" src="assets/about.jpeg" alt="" class="rounded-lg h-full w-full">
+                </div>
+                <div class="flex flex-col justify-start lg:basis-1/2">
+                    <h1 class="about-content section-tittle-light dark:section-tittle-dark">enak gak harus mahal</h1>
+                    <div class="about-content divider mt-5 mx-0"></div>
+                    <p class="about-content section-parag-light dark:section-parag-dark mt-5 text-justify ">Momong Resto
+                        adalah
+                        restoran keluarga dengan
+                        konsep modern, yang ramah kantong dan ramah anak. Menyediakan Beragam hidangan untuk memuaskan
+                        berbagai selera. Nikmati pengalaman bersantap di momong resto yang menawarkan kenyamanan untuk
+                        bersantap.Baik sendiri ataupun bersama keluarga. Serta acara-acara khusus seperti pernikahan dan
+                        acara lainya
+                    </p>
+                    <p class="about-content section-parag-light dark:section-parag-dark mt-5 ">Momong Resto adalah
+                        pilihan yang tepat untuk anda
+                    </p>
+                    <div class="grid grid-cols-2 mt-5 about-content">
+                        <div class="flex justify-start gap-2 items-center my-2">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.44,0-135-60.561-135-135S90.56,30,165,30s135,60.561,135,135S239.439,300,165,300z" />
+                                    <path
+                                        d="M226.872,106.664l-84.854,84.853l-38.89-38.891c-5.857-5.857-15.355-5.858-21.213-0.001 c-5.858,5.858-5.858,15.355,0,21.213l49.496,49.498c2.813,2.813,6.628,4.394,10.606,4.394c0.001,0,0,0,0.001,0 c3.978,0,7.793-1.581,10.606-4.393l95.461-95.459c5.858-5.858,5.858-15.355,0-21.213 C242.227,100.807,232.73,100.806,226.872,106.664z" />
+                                </g>
+                            </svg>
+                            <p class="section-parag-light dark:section-parag-dark">Harga Terbaik</p>
+                        </div>
+                        <div class="flex justify-start gap-2 items-center">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.44,0-135-60.561-135-135S90.56,30,165,30s135,60.561,135,135S239.439,300,165,300z" />
+                                    <path
+                                        d="M226.872,106.664l-84.854,84.853l-38.89-38.891c-5.857-5.857-15.355-5.858-21.213-0.001 c-5.858,5.858-5.858,15.355,0,21.213l49.496,49.498c2.813,2.813,6.628,4.394,10.606,4.394c0.001,0,0,0,0.001,0 c3.978,0,7.793-1.581,10.606-4.393l95.461-95.459c5.858-5.858,5.858-15.355,0-21.213 C242.227,100.807,232.73,100.806,226.872,106.664z" />
+                                </g>
+                            </svg>
+                            <p class="section-parag-light dark:section-parag-dark">Bahan baku berkualitas
+                            </p>
+                        </div>
+                        <div class="flex justify-start gap-2 items-center">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.44,0-135-60.561-135-135S90.56,30,165,30s135,60.561,135,135S239.439,300,165,300z" />
+                                    <path
+                                        d="M226.872,106.664l-84.854,84.853l-38.89-38.891c-5.857-5.857-15.355-5.858-21.213-0.001 c-5.858,5.858-5.858,15.355,0,21.213l49.496,49.498c2.813,2.813,6.628,4.394,10.606,4.394c0.001,0,0,0,0.001,0 c3.978,0,7.793-1.581,10.606-4.393l95.461-95.459c5.858-5.858,5.858-15.355,0-21.213 C242.227,100.807,232.73,100.806,226.872,106.664z" />
+                                </g>
+                            </svg>
+                            <p class="section-parag-light dark:section-parag-dark">Pelayanan Yang Baik</p>
+                        </div>
+                        <div class="flex justify-start gap-2 items-center">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.44,0-135-60.561-135-135S90.56,30,165,30s135,60.561,135,135S239.439,300,165,300z" />
+                                    <path
+                                        d="M226.872,106.664l-84.854,84.853l-38.89-38.891c-5.857-5.857-15.355-5.858-21.213-0.001 c-5.858,5.858-5.858,15.355,0,21.213l49.496,49.498c2.813,2.813,6.628,4.394,10.606,4.394c0.001,0,0,0,0.001,0 c3.978,0,7.793-1.581,10.606-4.393l95.461-95.459c5.858-5.858,5.858-15.355,0-21.213 C242.227,100.807,232.73,100.806,226.872,106.664z" />
+                                </g>
+                            </svg>
+                            <p class="section-parag-light dark:section-parag-dark">Fasilitas lengkap</p>
+                        </div>
+                        <div class="flex justify-start gap-2 items-center mt-2">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.44,0-135-60.561-135-135S90.56,30,165,30s135,60.561,135,135S239.439,300,165,300z" />
+                                    <path
+                                        d="M226.872,106.664l-84.854,84.853l-38.89-38.891c-5.857-5.857-15.355-5.858-21.213-0.001 c-5.858,5.858-5.858,15.355,0,21.213l49.496,49.498c2.813,2.813,6.628,4.394,10.606,4.394c0.001,0,0,0,0.001,0 c3.978,0,7.793-1.581,10.606-4.393l95.461-95.459c5.858-5.858,5.858-15.355,0-21.213 C242.227,100.807,232.73,100.806,226.872,106.664z" />
+                                </g>
+                            </svg>
+                            <p class="section-parag-light dark:section-parag-dark">Lokasi Strategis dan Nyaman</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+
+        <!-- FASILITAS -->
+        <section id="fasilitas" class="bg-primaryColor dark:bg-darkColor h-fit flex items-center">
+            <div class="container text-center h-fit ">
+                <h1 class="tittle-center section-tittle-dark">fasilitas</h1>
+                <div class="tittle-center divider mt-5 mx-auto"></div>
+                <p class="tittle-center mt-3 section-parag-dark md:px-24 lg:px-52">Momong resto memiliki
+                    fasilitas
+                    yang lengkap untuk memudahkan dan menambah kenyamanan pelanggan, di antaranya:</p>
+                <div class="text-left mt-5 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/fasilitas/momong-fasilitas-1.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                        <div>
+                            <h4 class="h4 uppercase mt-2 card_tittle">
+                                parking zone</h4>
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/fasilitas/momong-fasilitas-2.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                        <div>
+                            <h4 class="h4 uppercase mt-2 card_tittle">
+                                playground</h4>
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/fasilitas/momong-fasilitas-3.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                        <div>
+                            <h4 class="h4 uppercase mt-2 card_tittle">
+                                live music</h4>
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/fasilitas/momong-fasilitas-4.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                        <div>
+                            <h4 class="h4 uppercase mt-2 card_tittle">
+                                meetng room</h4>
+                        </div>
+                    </div>
+
+                    <!-- ruang depan -->
+                    <div
+                        class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
+                        <h1 class="tittle-center section-tittle-dark">ruang depan</h1>
+                        <div class="tittle-center divider mt-5 mx-auto"></div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-depan-01.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                            ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-depan-02.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-depan-03.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-depan-04.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <!-- ruang depan -->
+
+
+                    <!-- ruang samping -->
+                    <div
+                        class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
+
+                        <h1 class="tittle-center section-tittle-dark">ruang samping</h1>
+                        <div class="tittle-center divider mt-5 mx-auto"></div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                        ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-samping-01.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div
+                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                                                    ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-samping-02.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-samping-03.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-samping-04.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <!-- ruang depan -->
+
+
+                    <!-- ruang atas -->
+                    <div
+                        class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
+
+                        <h1 class="tittle-center section-tittle-dark">ruang atas</h1>
+                        <div class="tittle-center divider mt-5 mx-auto"></div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div
+                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                                                ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-atas-01.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div
+                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                                                                            ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-atas-02.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-atas-03.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-atas-04.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <!-- ruang atas -->
+
+                    <!-- ruang belakang -->
+                    <div
+                        class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
+
+                        <h1 class="tittle-center section-tittle-dark">ruang belakang</h1>
+                        <div class="tittle-center divider mt-5 mx-auto"></div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div
+                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                                                ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-belakang-01.jpeg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
+                        <div
+                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                                                                                                            ease-linear duration-200">
+                            <img loading="lazy" src="assets/reservation/ruangan-belakang-02.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-belakang-03.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2">
+                        <div class="rounded-lg">
+                            <img loading="lazy" src="assets/reservation/ruangan-belakang-04.jpg" alt=""
+                                class="w-full h-full rounded-lg">
+                        </div>
+                    </div>
+                    <!-- ruang belakang -->
+
+                </div>
+
+                <a class="lg:w-fit btn btn_primary px-4  hover:scale-105 mt-5" href="#">
+                    reservasi
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </a>
+
+        </section>
+        <!-- FASILITAS -->
+
+        <!--~~~~~~~~~~~~~~~ layanan ~~~~~~~~~~~~~~~-->
+        <section id="layanan" class="bg-white dark:bg-darkColorAccent ">
+            <div class="container text-center ">
+                <h1 class="tittle-center menu h-fit section-tittle-light dark:section-tittle-dark">Layanan</h1>
+                <div class="tittle-center divider mt-5 mx-auto"></div>
+                <p class="tittle-center mt-3 section-parag-light dark:section-parag-dark md:px-24 lg:px-52">Kami
+                    dengan bangga menawarkan beragam layanan untuk memenuhi kebutuhan kuliner Anda</p>
+
+                <!-- layanan 1 -->
+                <div class="container flex flex-col lg:flex-row gap-10 pb-10 mt-5 lg:mt-20">
+                    <div class="lg:basis-1/2 layanan-image-1 flex flex-col lg:flex-row items-center justify-center">
+                        <img loading="lazy" src="assets/reservation/ruangan-depan-01.jpeg" alt=""
+                            class="rounded-lg h-full w-full">
+                    </div>
+                    <div class="flex flex-col justify-start lg:basis-1/2 text-left">
+                        <h1 class="layanan-content-1 section-tittle-light dark:section-tittle-dark">Makan Di Tempat
+                        </h1>
+                        <div class="layanan-content-1 divider mt-5 mx-0"></div>
+                        <p class="layanan-content-1 section-parag-light dark:section-parag-dark mt-5 text-justify ">
+                            Nikmati suasana
+                            yang
+                            hangat dan ramah di momong resto. Anda dapat menikmati hidangan lezat yang disajikan dengan
+                            penuh
+                            perhatian oleh staf kami yang ramah dan terlatih.Selain itu, kami juga menyediakan layanan
+                            pemesanan meja untuk memastikan Anda mendapatkan tempat yang nyaman dan sesuai dengan jumlah
+                            tamu yang Anda inginkan. Cukup hubungi kami untuk merencanakan kunjungan Anda.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- layanan 2 -->
+                <div class="lg:mt-20 container flex flex-col-reverse lg:flex-row gap-10 pb-10 text-left">
+
+                    <div class="flex flex-col justify-start lg:basis-1/2">
+                        <h1 class="layanan-content-2 section-tittle-light dark:section-tittle-dark">Tempat jamuan acara
+                        </h1>
+                        <div class="layanan-content-2 divider mt-5 mx-0"></div>
+                        <p class="layanan-content-2 section-parag-light dark:section-parag-dark mt-5 ">Momong Resto
+                            siap menjadi tempat untuk mendukung acara anda seperti acara kantor, ulang tahu, pernikahan,
+                            dan acara lainya
+                        </p>
+                    </div>
+                    <div class="lg:basis-1/2 layanan-image-2 flex items-center justify-center">
+                        <img loading="lazy" src="assets/reservation/ruangan-samping-01.jpeg" alt=""
+                            class="rounded-lg h-full w-full">
+                    </div>
+                </div>
+
+                <!-- layanan 3 -->
+                <div class="lg:mt-20 container flex flex-col lg:flex-row gap-10 pb-10 text-left">
+                    <div class="lg:basis-1/2 layanan-image-3 flex items-center justify-center">
+                        <img loading="lazy" src="assets/delivery.jpeg" alt="" class="rounded-lg h-full w-full">
+                    </div>
+                    <div class="flex flex-col justify-start lg:basis-1/2">
+                        <h1 class="layanan-conient-3 section-tittle-light dark:section-tittle-dark">Pesan Antar
+                            (delivery order)
+                        </h1>
+                        <div class="layanan-content-3 divider mt-5 mx-0"></div>
+                        <p class="layanan-content-3 section-parag-light dark:section-parag-dark mt-5 ">Nikmati kelezatan
+                            makanan kami tanpa harus keluar rumah. terdapat gratis ongkir (ongkos kirim) untuk area
+                            dalam
+                            kota. cukup
+                            hubungi
+                            kami dan makanan akan diantarkan.
+                        </p>
+                        <p class="layanan-content-1 section-parag-light dark:section-parag-dark mt-5 text-justify ">
+                            klik dibawah ini untuk
+                            pemesanan
+                        </p>
+                        <a href=""><button class=" btn btn_primary mt-5 w-fit">
+                                <img loading="lazy" src="assets/phone.svg" alt="" class="w-4 h-4 m-2">087791944000
+                            </button></a>
+                    </div>
+
+                </div>
+
+                <!-- layanan 4 -->
+                <div class="lg:mt-20 container flex flex-col-reverse lg:flex-row gap-10 pb-10 text-left">
+
+                    <div class="flex flex-col justify-start lg:basis-1/2">
+                        <h1 class="layanan-content-4 section-tittle-light dark:section-tittle-dark">Nasi Box</h1>
+                        <div class="layanan-content-4 divider mt-5 mx-0"></div>
+                        <p class="layanan-content-4 section-parag-light dark:section-parag-dark mt-5 ">Kami menyediakan
+                            berbagai pilihan hidangan pendamping. Seperti ayam, sapi, ikan, serta beragam sayuran segar.
+                        </p>
+
+                    </div>
+                    <div class="lg:basis-1/2 layanan-image-4 flex items-center justify-center">
+                        <img loading="lazy" src="assets/box.jpg" alt="" class="rounded-lg h-full w-full">
+                    </div>
+                </div>
+
+
+        </section>
+        <!--~~~~~~~~~~~~~~~ layanan ~~~~~~~~~~~~~~~-->
+
+        <!----------------- menu ------------------->
+        <section id="menu">
+            <div class="container w-full text-center">
+                <div class="">
+                    <h1 class="tittle-center menu h-fit  section-tittle-dark">menu kami</h1>
+                    <div class="tittle-center divider mt-5 mx-auto"></div>
+                    <p class="tittle-center menu h-fit mt-3 section-parag-dark md:px-24 lg:px-56 text-center">
+                        Selamat datang di halaman
+                        menu makanan
+                        kami! Di sini, Anda akan menemukan beragam hidangan makanan minuman dan snack</p>
+                    <a href=""
+                        class="text-secondaryColor px-2 rounded-lg mt-2 text-sm hover:bg-primaryColorAccent duration-200">
+                        >> Download
+                        Menu << </a>
+                            <div class="tab-wrapper">
+                                <ul class="flex flex-wrap justify-center gap-3  mt-5 ">
+                                    <li data-tabs="all"
+                                        class="active btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                        semua
+                                    </li>
+                                    <li data-tabs="ayam"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        ayam
+                                    </li>
+
+                                    <li data-tabs="sayur"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                        sayur
+                                    </li>
+
+                                    <li data-tabs="ikan"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        ikan
+                                    </li>
+                                    <li data-tabs="sapi"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        sapi
+                                    </li>
+                                    <li data-tabs="seafood"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        seafood
+                                    </li>
+                                    <li data-tabs="snack"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        snack
+                                    </li>
+                                    <li data-tabs="minuman"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        minuman
+                                    </li>
+                                    <li data-tabs="paket"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                        paketan
+                                    </li>
+                                    <li data-tabs="lainya"
+                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                        lainya
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- menu display -->
+                            <div class="text-left ">
+                                <ul
+                                    class=" menu-display mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+
+                                    <!-- paketan-->
+                                    <li
+                                        class="menu h-fit item-wrapper paket border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                        ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/paket/menu-paket-1.png" alt=""
+                                                class="w-full h-full rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                PAKET BENTO </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper paket border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg
+                                        ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/paket/menu-paket-2.png" alt=""
+                                                class="w-full h-full rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                PAKET AYAM + NASI
+                                            </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- paketan -->
+
+                                    <!-- sayur -->
+                                    <li
+                                        class="menu h-fit  item-wrapper sayur border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/sayur/menu-sayur-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                CAH KANGKUNG </h3>
+                                            <p class="section-parag-dark mt-3">Kangkung ditumis dengan bumbu bawang
+                                                putih.</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- sayur -->
+
+                                    <!-- ayam -->
+                                    <li
+                                        class="menu h-fit  item-wrapper ayam border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/ayam/menu-ayam-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                ayam bakar </h3>
+                                            <p class="section-parag-dark mt-3">Ayam dibakar dengan bumbu manis gurih
+                                                hingga meresap, disajikan dengan sambal</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper ayam border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/ayam/menu-ayam-2.jpeg" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                ayam geprek </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- ayam -->
+
+                                    <!-- ikan -->
+                                    <li
+                                        class="menu h-fit  item-wrapper ikan border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/ikan/menu-ikan-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                gurame goreng tepung </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper ikan border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/ikan/menu-ikan-2.jpg" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                nila bakar </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- ikan -->
+
+                                    <!-- seafood -->
+                                    <li
+                                        class="menu h-fit  item-wrapper seafood border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/seafood/menu-seafood-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                udang saos pedas </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit  item-wrapper seafood border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/seafood/menu-seafood-2.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                tomyam seafood </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- seafood -->
+
+                                    <!-- sapi -->
+                                    <li
+                                        class="menu h-fit item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                SOP IGA </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit  item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-2.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                SOP DAGING </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-3.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                iga bakar </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit  item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-4.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                sapi lada hitam</h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- sapi -->
+
+                                    <!-- snack -->
+                                    <li
+                                        class="menu h-fit  item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/snack/menu-snack-1.png" alt=""
+                                                class="w-fit h-full rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                roti bakar chococheese </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/snack/menu-snack-2.png" alt=""
+                                                class="w-fit h-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                french fries </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg hover:bg-secondaryColor dark:hover:bg-secondaryColor ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/snack/menu-snack-3.png" alt=""
+                                                class="w-fit h-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                onion ring </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+
+                                    <li
+                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg hover:bg-secondaryColor dark:hover:bg-secondaryColor ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/snack/menu-snack-4.png" alt=""
+                                                class="w-fit h-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                lumpia </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- snack -->
+
+                                    <!-- minuman -->
+                                    <li
+                                        class="menu h-fit item-wrapper minuman border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg hover:bg-secondaryColor dark:hover:bg-secondaryColor ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/minuman/menu-minuman-1.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                cofee </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="menu h-fit item-wrapper minuman border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class="h-fit grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg hover:bg-secondaryColor dark:hover:bg-secondaryColor ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/minuman/menu-minuman-2.png" alt=""
+                                                class="w-fit rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                fresh drink </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- minuman -->
+
+                                    <!-- lainya -->
+                                    <li
+                                        class="menu lainya h-fit item-wrapper border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
+                                        <div
+                                            class=" grid place-items-center bg-sectionTittleColor dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
+                                            <img loading="lazy" src="assets/menu/lainya/nasi.jpeg" alt=""
+                                                class="w-full h-full rounded-lg">
+                                        </div>
+                                        <div>
+                                            <h3 class="h3 uppercase mt-2 card_tittle">
+                                                nasi putih </h3>
+                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing
+                                                .</p>
+                                            <p class="text-secondaryColor mt-3">Rp.00</p>
+                                        </div>
+                                    </li>
+                                    <!-- lainya -->
+                                </ul>
+                            </div>
+
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+
+        <!-- testimonial -->
+        <section id="testimonial" class="bg-white dark:bg-darkColorAccent">
+            <div class="container w-full text-center">
+                <div class="">
+                    <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">apa kata mereka</h1>
+                    <div class="tittle-center divider mt-5 mx-auto"></div>
+                </div>
+
+                <div class="review swiper py-10 mt-8 mb-8 overflow-hidden">
+                    <ul class="swiper-wrapper testislide  mb-10">
+                        <li class="swiper-slide">
+                            <!-- Card -->
+                            <div class="w-full">
+                                <div class="flex flex-col bg-primaryColor text-white dark:bg-darkColor rounded-lg
+                                            ">
+                                    <div class="flex-auto p-4 md:p-6">
+                                        <p class="section-parag-dark">
+                                            " With Preline, we're able to easily track our performance in full
+                                            detail. It's
+                                            become an essential
+                                            tool for us to grow and engage with our audience. "
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="p-4 bg-primaryColor border-t border-secondaryColor rounded-b-xl md:px-7 dark:bg-darkColor">
+                                        <div class="flex items-center ">
+                                            <div class="flex-shrink-0">
+                                                <img loading="lazy"
+                                                    class="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                                                    src="assets/testimonial/testimonial-1.jpg">
+                                            </div>
+
+                                            <div class="grow ms-3 text-left">
+                                                <p class="section-parag-dark">
+                                                    Josh Tyson
+                                                </p>
+                                                <p class="text-xs text-white dark:text-neutral-400">
+                                                    lorem ipsum | kebumen
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <!-- Card -->
+                            <div class="w-full">
+                                <div class="flex flex-col bg-primaryColor text-white dark:bg-darkColor rounded-lg
+                                            ">
+                                    <div class="flex-auto p-4 md:p-6">
+                                        <p class="section-parag-dark">
+                                            " With Preline, we're able to easily track our performance in full
+                                            detail. It's
+                                            become an essential
+                                            tool for us to grow and engage with our audience. "
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="p-4 bg-primaryColor border-t border-secondaryColor rounded-b-xl md:px-7 dark:bg-darkColor">
+                                        <div class="flex items-center ">
+                                            <div class="flex-shrink-0">
+                                                <img loading="lazy"
+                                                    class="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                                                    src="assets/testimonial/testimonial-2.jpg">
+                                            </div>
+
+                                            <div class="grow ms-3 text-left">
+                                                <p class="section-parag-dark">
+                                                    Josh Tyson
+                                                </p>
+                                                <p class="text-xs text-white dark:text-neutral-400">
+                                                    lorem ipsum | kebumen
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <!-- Card -->
+                            <div class="w-full">
+                                <div class="flex flex-col bg-primaryColor text-white dark:bg-darkColor rounded-lg
+                                            ">
+                                    <div class="flex-auto p-4 md:p-6">
+                                        <p class="section-parag-dark">
+                                            " With Preline, we're able to easily track our performance in full
+                                            detail. It's
+                                            become an essential
+                                            tool for us to grow and engage with our audience. "
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="p-4 bg-primaryColor border-t border-secondaryColor rounded-b-xl md:px-7 dark:bg-darkColor">
+                                        <div class="flex items-center ">
+                                            <div class="flex-shrink-0">
+                                                <img loading="lazy"
+                                                    class="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                                                    src="assets/testimonial/testimonial-3.jpg">
+                                            </div>
+
+                                            <div class="grow ms-3 text-left">
+                                                <p class="section-parag-dark">
+                                                    Josh Tyson
+                                                </p>
+                                                <p class="text-xs text-white dark:text-neutral-400">
+                                                    lorem ipsum | kebumen
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <!-- Card -->
+                            <div class="w-full">
+                                <div class="flex flex-col bg-primaryColor text-white dark:bg-darkColor rounded-lg
+                                            ">
+                                    <div class="flex-auto p-4 md:p-6">
+                                        <p class="section-parag-dark">
+                                            " With Preline, we're able to easily track our performance in full
+                                            detail. It's
+                                            become an essential
+                                            tool for us to grow and engage with our audience. "
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="p-4 bg-primaryColor border-t border-secondaryColor rounded-b-xl md:px-7 dark:bg-darkColor">
+                                        <div class="flex items-center ">
+                                            <div class="flex-shrink-0">
+                                                <img loading="lazy"
+                                                    class="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                                                    src="assets/testimonial/testimonial-4.jpg">
+                                            </div>
+
+                                            <div class="grow ms-3 text-left">
+                                                <p class="section-parag-dark">
+                                                    Josh Tyson
+                                                </p>
+                                                <p class="text-xs text-white dark:text-neutral-400">
+                                                    lorem ipsum | kebumen
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <!-- Card -->
+                            <div class="w-full">
+                                <div class="flex flex-col bg-primaryColor text-white dark:bg-darkColor rounded-lg
+                                            ">
+                                    <div class="flex-auto p-4 md:p-6">
+                                        <p class="section-parag-dark">
+                                            " With Preline, we're able to easily track our performance in full
+                                            detail. It's
+                                            become an essential
+                                            tool for us to grow and engage with our audience. "
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="p-4 bg-primaryColor border-t border-secondaryColor rounded-b-xl md:px-7 dark:bg-darkColor">
+                                        <div class="flex items-center ">
+                                            <div class="flex-shrink-0">
+                                                <img loading="lazy"
+                                                    class="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                                                    src="assets/testimonial/testimonial-5.jpg">
+                                            </div>
+
+                                            <div class="grow ms-3 text-left">
+                                                <p class="section-parag-dark">
+                                                    Josh Tyson
+                                                </p>
+                                                <p class="text-xs text-white dark:text-neutral-400">
+                                                    lorem ipsum | kebumen
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Grid -->
+        </section>
+        <!-- testimonial -->
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+
+    <footer>
+        <section id="kontak" class="dark:bg-darkColor lg:h-dvh lg:flex lg:items-center">
+            <div class="container w-full h-fit ">
+                <div class="px-2 grid grid-cols-1 lg:grid-cols-7 gap-4 lg:gap-4">
+                    <div class="w-full lg:col-span-2">
+                        <a href="#" class=""><img loading="lazy" src="assets/logo/logo-1-dark.png" alt=""
+                                class="w-[190px]"></a>
+                        <div class="divider mx-0 mt-2 w-1/3"></div>
+                        <p class="section-parag-dark w-full lg:w-full md:w-1/2 mt-2">Tempat kami menghadirkan cita rasa
+                            yang nikmat ke meja Anda.Setiap hidangan dipersiapkan dengan cinta dan keahlian,
+                            menggunakan bahan-bahan yang berkualitas
+                        </p>
+                        <p
+                            class="rounded-md bg-primaryColorAccent dark:bg-darkColorAccent p-2 mt-2 section-parag-dark w-fit ">
+                            Copyright© 2024 | Momongresto</p>
+                    </div>
+
+                    <div class="list-none capitalize lg:col-span-3">
+                        <h3 class="h3 uppercase">kontak</h3>
+                        <div class="divider mx-0 mt-2 w-1/3"></div>
+                        <li class="mt-3 flex gap-2 flex-row">
+                            <svg version="1.1" class="w-5 h-5 lg:w-4 lg:h-4 fill-secondaryColor " id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 287.32 287.32" style="enable-background:new 0 0 287.32 287.32;"
+                                xml:space="preserve">
+                                <path
+                                    d="M267.749,191.076c-14.595-11.729-27.983-17.431-40.93-17.431c-18.729,0-32.214,11.914-44.423,24.119 c-1.404,1.405-3.104,2.06-5.349,2.06c-10.288,0.001-28.387-12.883-53.794-38.293c-29.89-29.892-41.191-48.904-33.592-56.506 c20.6-20.593,27.031-41.237-4.509-80.462C73.861,10.51,62.814,3.68,51.38,3.68c-15.42,0-27.142,12.326-37.484,23.202 c-1.788,1.88-3.477,3.656-5.133,5.312c-11.689,11.688-11.683,37.182,0.017,68.2c12.837,34.033,38.183,71.055,71.37,104.247 c25.665,25.663,53.59,46.403,80.758,60.328c23.719,12.158,46.726,18.672,64.783,18.672c0.002,0,0.004,0,0.007,0 c11.3,0,20.479-2.465,26.541-7.478c12.314-10.181,35.234-29.039,35.081-51.439C287.236,212.71,280.653,201.451,267.749,191.076z" />
+                            </svg>
+                            <div class="flex-col">
+                                <p class="section-parag-dark">
+                                    081227404342 (Reservasi)</p>
+                                <p class="section-parag-dark">
+                                    087791944000 (Pesan Antar)</p>
+                            </div>
+
+                        </li>
+                        <li class="mt-2 flex gap-2 flex-row">
+                            <svg version="1.1" class="md:h-6 md:w-6 h-8 w-8 fill-secondaryColor" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M256,0C166.035,0,91,72.47,91,165c0,35.202,10.578,66.592,30.879,96.006l121.494,189.58 c5.894,9.216,19.372,9.198,25.254,0l122.021-190.225C410.512,232.28,421,199.307,421,165C421,74.019,346.981,0,256,0z M256,240 c-41.353,0-75-33.647-75-75c0-41.353,33.647-75,75-75c41.353,0,75,33.647,75,75C331,206.353,297.353,240,256,240z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M373.264,344.695l-75.531,118.087c-19.551,30.482-64.024,30.382-83.481,0.029l-75.654-118.085 C72.034,360.116,31,388.309,31,422c0,58.462,115.928,90,225,90s225-31.538,225-90C481,388.285,439.909,360.077,373.264,344.695z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="https://www.google.com/maps/place/Momong+Resto/@-7.6641506,109.6701914,-14a,63.2y/data=!3m8!1e2!3m6!1sAF1QipOp3fKb0sWFF3jzeDfZWxTGMiHMhHqAkOh652Yh!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOp3fKb0sWFF3jzeDfZWxTGMiHMhHqAkOh652Yh%3Dw203-h298-k-no!7i1908!8i2801!4m9!3m8!1s0x2e7ab6021e100087:0x7ed5cfb4bbf776eb!8m2!3d-7.6641506!4d109.6701914!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11gfnw1b0n?entry=ttu"
+                                class="section-parag-dark hover:text-secondaryColor duration-150">
+                                Jl. HM Sarbini No.142 B, Megabiru, Karangsari,
+                                Kec. Kebumen, Kab. Kebumen,
+                                Jawa Tengah</a>
+
+                        </li>
+
+                        <li class="mt-2 flex gap-2 flex-row">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 fill-secondaryColor" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M256,0C114.614,0,0,114.614,0,256c0,141.384,114.614,256,256,256s256-114.616,256-256C512,114.614,397.386,0,256,0z M397.421,397.421C359.646,435.197,309.421,456,256,456c-53.422,0-103.646-20.803-141.421-58.579 C76.803,359.646,56,309.422,56,256s20.803-103.646,58.579-141.421C152.354,76.803,202.578,56,256,56 c53.421,0,103.646,20.803,141.421,58.579C435.197,152.354,456,202.578,456,256S435.197,359.646,397.421,397.421z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M280,105.893V224c3.029,2.275,5.725,4.971,8,8.002h80v48h-79.998c-7.298,9.715-18.915,16-32.002,16 c-6.301,0-12.258-1.461-17.558-4.056l-80.33,80.328C184.558,394.562,218.707,408,256,408c83.947,0,152-68.053,152-152 C408,180.221,352.542,117.4,280,105.893z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M104,256c0,37.293,13.438,71.443,35.726,97.89l80.33-80.33C217.461,268.259,216,262.301,216,256 c0-13.086,6.285-24.704,16-32.002V105.893C159.458,117.4,104,180.221,104,256z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <ul class="flex flex-col">
+                                <p class="section-parag-dark mb-2">jam operasional</p>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">senin</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">selasa</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">rabu</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">kamis</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">jum'at</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">sabtu</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+                                <li class=" flex gap-2 flex-row justify-between">
+                                    <p class="section-parag-dark">minggu</p>
+                                    <p class="section-parag-dark">: 10.00 WIB - 21.30 WIB</p>
+                                </li>
+
+
+                            </ul>
+
+
+                        </li>
+
+                    </div>
+
+                    <div class="list-none capitalize">
+                        <h3 class="h3 uppercase">navigasi</h3>
+                        <div class="divider mx-0 mt-2 w-1/3"></div>
+                        <li class="mt-2">
+                            <a href="#" class="section-parag-dark hover:text-secondaryColor duration-150">home</a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="section-parag-dark hover:text-secondaryColor duration-150">tentang</a>
+                        </li>
+                        <li>
+                            <a href="#fasilitas"
+                                class="section-parag-dark hover:text-secondaryColor duration-150">fasilitas</a>
+                        </li>
+                        <li>
+
+                            <a href="#layanan"
+                                class="section-parag-dark hover:text-secondaryColor duration-150">layanan</a>
+                        </li>
+
+                        <li>
+                            <a href="#menu" class="section-parag-dark hover:text-secondaryColor duration-150">menu</a>
+                        </li>
+                    </div>
+
+                    <div class="list-none capitalize">
+                        <h3 class="h3 uppercase">sosial media</h3>
+                        <div class="divider mx-0 mt-2 w-1/3"></div>
+
+                        <div class="flex items-center justify-start gap-3 border:hidden mt-2 ">
+                            <a class="size-[35px] md:size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold p-2 fill-white hover:bg-secondaryColor hover:fill-black duration-150 rounded-full"
+                                href="https://www.instagram.com/momongresto/?hl=id">
+                                <svg role="img loading=" lazy"" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-8 h-8">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+
+    <!-- back to top -->
+    <a href="#" id="top"
+        class="flex justify-center items-center h-[46px] w-[46px] rounded-full bg-secondaryColor hover:shadow-lg duration-100 hover:scale-105 fixed z-40 bottom-4 right-4 text-center">
+
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                d="m12 7.59998c.2652 0 .5196.10535.7071.29289l6.8 6.80003c.3905.3905.3905 1.0237 0 1.4142s-1.0237.3905-1.4142 0l-6.0929-6.0929-6.09288 6.0929c-.39052.3905-1.02369.3905-1.41421 0-.39053-.3905-.39053-1.0237-.00001-1.4142l6.8-6.80003c.1875-.18754.4419-.29289.7071-.29289z"
+                fill="rgb(0,0,0)" fill-rule="evenodd" />
+        </svg>
+
+    </a>
+    <!-- back to top -->
+    <div id="fab"
+        class="flex h-[46px] w-[46px] hover:scale-105 duration-100 shadow-lg cursor-pointer bg-green-700 rounded-full fixed z-40 bottom-[70px] right-4 justify-center items-center">
+        <img src="assets/phone.svg" alt="" class="">
+    </div>
+
+    <div class=" fab-options hidden">
+        <div
+            class=" flex gap-2 w-fit h-fit p-1 rounded-md shadow-lg cursor-pointer bg-blueColor  fixed z-40 bottom-[70px] right-16 justify-center items-center hover:scale-105 duration-150">
+            <img src="assets/reservation-fab.svg" alt="" class="w-4 h-4 fill-white">
+            <a href="#" class="h4 md:section-parag-dark lg:section-parag-dark scale-105 px-1">Reservasi</a>
+        </div>
+        <div
+            class="flex gap-2 w-fit h-fit p-1 rounded-md shadow-lg cursor-pointer bg-greenColor  fixed z-40 bottom-[105px] right-16 justify-center items-center hover:scale-105 duration-150">
+            <img src="assets/delivery-fab.svg" alt="" class="w-4 h-4 fill-white">
+            <a href="#" class="h4 md:section-parag-dark lg:section-parag-dark scale-105 px-1">Pesan Antar
+            </a>
+        </div>
+    </div>
+
+    <!--~~~~~~~~~~~~~~~ Swiper~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--~~~~~~~~~~~~~~~ Swiper ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Reveal animation ~~~~~~~~~~~~~~~-->
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <!--~~~~~~~~~~~~~~~ Reveal animation ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="./js/script.js"></script>
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+
+</body>
+
+</html>
