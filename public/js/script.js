@@ -285,3 +285,10 @@ document.addEventListener('click', () => {
   fabOptions.style.display = 'none';
 });
 
+// load image
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+  images.forEach(img => {
+    img.loading = 'auto';
+  });
+});
