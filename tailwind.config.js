@@ -11,6 +11,11 @@ module.exports = {
 
     extend: {
 
+      backgroundImage: {
+        'hero-pattern': "url('./public/assets/pattern1.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+
       colors: {
         primaryColor: '#820300',
         primaryColorAccent: "#B80000",

@@ -20,12 +20,15 @@
 <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
     <header id="navbar" class=" fixed top-0 left-0 w-full z-30 shadow-sm ">
-        <nav class="capitalize container relative h-14 flex justify-between items-center py-2 lg:py-9">
+        <nav class="capitalize container relative lg:h-4 flex justify-between items-center py-2 lg:py-9">
             <!-- logo -->
-            <div class="flex flex-row lg:flex-col justify-center items-center">
-                <a href="#"><img src="assets/logo/logo-2-dark.png" alt="" class="w-[45px] hidden lg:flex"></a>
-                <a href="#"><img src="assets/logo/logo-4-dark.png" alt="" class="w-[95px] hidden lg:flex"></a>
-                <a href="#"><img src="assets/logo/logo-dark.png" alt="" class="w-[200px] lg:hidden"></a>
+            <div class="gap-[5px] flex flex-row justify-center items-center">
+                <a href="#"><img src="assets/logo/logo-2-dark.png" alt=""
+                        class="lg:w-[55px] md:w-[35px] w-[30px] flex"></a>
+                <a href="#"><img src="assets/logo/logo-1-dark.png" alt=""
+                        class="lg:w-[200px] md:[170px] w-[130px] flex"></a>
+                <!-- <a href="#"><img src="assets/logo/logo-4-dark.png" alt="" class="w-[95px] flex"></a> -->
+                <!-- <a href="#"><img src="assets/logo/logo-dark.png" alt="" class="w-[200px] l:hidden"></a> -->
             </div>
             <!-- logo -->
 
@@ -262,7 +265,7 @@
         <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
 
         <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
-        <section id="about" class="bg-white dark:bg-darkColorAccent ">
+        <section id="about" class="bg-gray-200 dark:bg-darkColorAccent ">
             <div class="container flex flex-col lg:flex-row gap-10 pb-10">
 
 
@@ -363,407 +366,416 @@
         <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
 
         <!----------------- menu ------------------->
-        <section id="menu" class="">
-            <div class="container w-full text-center pb-10 ">
+        <section id="menu" class=" dark:bg-darkColor">
+            <div class=" container w-full text-center pb-10 ">
                 <div class="">
-                    <h1 class="tittle-center menu h-fit  section-tittle-dark">menu kami</h1>
+                    <h1 class=" tittle-center menu h-fit section-tittle-light dark:section-tittle-dark">menu kami</h1>
                     <div class="tittle-center divider mt-5 mx-auto"></div>
-                    <p class="tittle-center menu h-fit mt-3 section-parag-dark md:px-24 lg:px-56 text-center">
+                    <p
+                        class="tittle-center menu h-fit mt-3 section-parag-light dark:section-parag-dark md:px-24 lg:px-56 text-center">
                         Selamat datang di halaman
                         menu makanan
                         kami! Di sini, Anda akan menemukan beragam hidangan makanan minuman dan snack</p>
-                    <a href=""
-                        class="text-secondaryColor px-2 rounded-lg mt-2 text-sm hover:bg-primaryColorAccent duration-200">
-                        >> Download
-                        Menu << </a>
-                            <div class="tab-wrapper">
-                                <ul class="flex flex-wrap justify-center gap-3  mt-5 ">
-                                    <li data-tabs="all"
-                                        class="active btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
-                                        semua
-                                    </li>
-                                    <li data-tabs="ayam"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        ayam
-                                    </li>
+                    <div class="tab-wrapper">
+                        <ul class="flex flex-wrap justify-center gap-3  mt-5 ">
+                            <li data-tabs="all"
+                                class="active btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                semua
+                            </li>
+                            <li data-tabs="ayam"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                ayam
+                            </li>
 
-                                    <li data-tabs="sayur"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
-                                        sayur
-                                    </li>
+                            <li data-tabs="sayur"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                sayur
+                            </li>
 
-                                    <li data-tabs="ikan"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        ikan
-                                    </li>
-                                    <li data-tabs="sapi"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        sapi
-                                    </li>
-                                    <li data-tabs="seafood"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        seafood
-                                    </li>
-                                    <li data-tabs="snack"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        snack
-                                    </li>
-                                    <li data-tabs="minuman"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        minuman
-                                    </li>
-                                    <li data-tabs="paket"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
-                                        paketan
-                                    </li>
-                                    <li data-tabs="lainya"
-                                        class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
-                                        lainya
-                                    </li>
-                                </ul>
-                            </div>
+                            <li data-tabs="ikan"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                ikan
+                            </li>
+                            <li data-tabs="sapi"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                sapi
+                            </li>
+                            <li data-tabs="seafood"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                seafood
+                            </li>
+                            <li data-tabs="snack"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                snack
+                            </li>
+                            <li data-tabs="minuman"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                minuman
+                            </li>
+                            <li data-tabs="paket"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent active:dark:stroke-secondaryColor section-parag-dark capitalize w-fit px-4">
+                                paketan
+                            </li>
+                            <li data-tabs="lainya"
+                                class="btn bg-primaryColorAccent dark:bg-darkColorAccent section-parag-dark capitalize w-fit px-4">
+                                lainya
+                            </li>
+                        </ul>
+                    </div>
 
-                            <!-- menu display -->
-                            <div class="text-left ">
-                                <ul
-                                    class="menu-display mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+                    <!-- menu display -->
+                    <div class="text-left ">
+                        <ul
+                            class="menu-display mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
 
-                                    <!-- paketan-->
-                                    <li
-                                        class="menu h-fit item-wrapper paket border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/paket/menu-paket-1.png" alt=""
-                                                class="w-full h-full rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                PAKET BENTO </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper paket border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/paket/menu-paket-2.png" alt=""
-                                                class="w-full h-full rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                PAKET AYAM + NASI
-                                            </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- paketan -->
+                            <!-- paketan-->
+                            <li
+                                class="menu h-fit item-wrapper paket border bg-gray-100 dark:bg-transparent border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/paket/menu-paket-1.png" alt=""
+                                        class="w-full h-full rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="text-darkColor dark:text-white h3 uppercase mt-2 card_tittle">
+                                        PAKET BENTO 1 & 2 </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Paket 1 (nasi,ayam
+                                        teriyaki,brokoli dan salad)
+                                    </p>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Paket 2 (nasi,ayam
+                                        lada hitam,pakcoy,dan salad)
+                                    </p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.25.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper paket bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/paket/menu-paket-2.png" alt=""
+                                        class="w-full h-full rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="text-darkColor dark:text-white h3 uppercase mt-2 card_tittle">
+                                        PAKET AYAM + NASI
+                                    </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Ayam goreng tepung bumbu
+                                        gurih dengan nasi dan sambal</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.15.000</p>
+                                </div>
+                            </li>
+                            <!-- paketan -->
 
-                                    <!-- sayur -->
-                                    <li
-                                        class="menu h-fit  item-wrapper sayur border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/sayur/menu-sayur-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                CAH KANGKUNG </h3>
-                                            <p class="section-parag-dark mt-3">Kangkung ditumis dengan bumbu bawang
-                                                putih.</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- sayur -->
+                            <!-- sayur -->
+                            <li
+                                class="menu h-fit  item-wrapper sayur bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/sayur/menu-sayur-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        CAH KANGKUNG </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Kangkung ditumis dengan
+                                        bumbu bawang
+                                        putih.</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.13.000</p>
+                                </div>
+                            </li>
+                            <!-- sayur -->
 
-                                    <!-- ayam -->
-                                    <li
-                                        class="menu h-fit  item-wrapper ayam border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/ayam/menu-ayam-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                ayam bakar </h3>
-                                            <p class="section-parag-dark mt-3">Ayam dibakar dengan bumbu manis gurih
-                                                hingga meresap, disajikan dengan sambal</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper ayam border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/ayam/menu-ayam-2.jpeg" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                ayam geprek </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- ayam -->
+                            <!-- ayam -->
+                            <li
+                                class="menu h-fit  item-wrapper ayam bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/ayam/menu-ayam-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        ayam kampung bakar </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Ayam dibakar dengan
+                                        bumbu manis gurih
+                                        hingga meresap, disajikan dengan sambal</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.20.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper ayam bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/ayam/menu-ayam-2.jpeg" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        ayam geprek </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Ayam geprek dengan nasi
+                                        dan sambal
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.13.000</p>
+                                </div>
+                            </li>
+                            <!-- ayam -->
 
-                                    <!-- ikan -->
-                                    <li
-                                        class="menu h-fit  item-wrapper ikan border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/ikan/menu-ikan-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                gurame goreng tepung </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper ikan border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/ikan/menu-ikan-2.jpg" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                nila bakar </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- ikan -->
+                            <!-- ikan -->
+                            <li
+                                class="menu h-fit  item-wrapper ikan bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/ikan/menu-ikan-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        gurame goreng tepung </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Ikan gurame segar,
+                                        digoreng dengan tepung bumbu gurih</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.25.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper ikan bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/ikan/menu-ikan-2.jpg" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        nila bakar </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Ikan nila segar dibalur
+                                        bumbu spesial. Dibakar dan disajikan dengan sambal dan kecap</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.23.000</p>
+                                </div>
+                            </li>
+                            <!-- ikan -->
 
-                                    <!-- seafood -->
-                                    <li
-                                        class="menu h-fit  item-wrapper seafood border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/seafood/menu-seafood-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                udang saos pedas </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit  item-wrapper seafood border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/seafood/menu-seafood-2.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                tomyam seafood </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- seafood -->
+                            <!-- seafood -->
+                            <li
+                                class="menu h-fit  item-wrapper seafood bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/seafood/menu-seafood-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        udang telor asin </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Udang dibaluri bumbu
+                                        pedas gurih
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.28.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit  item-wrapper seafood bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/seafood/menu-seafood-2.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        tomyam </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Tomyam dengan kuah yang
+                                        segar dan pedas
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.28.000</p>
+                                </div>
+                            </li>
+                            <!-- seafood -->
 
-                                    <!-- sapi -->
-                                    <li
-                                        class="menu h-fit item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                SOP IGA </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit  item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-2.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                SOP DAGING </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-3.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                iga bakar </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit  item-wrapper sapi border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/sapi/menu-sapi-4.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                sapi lada hitam</h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- sapi -->
+                            <!-- sapi -->
+                            <li
+                                class="menu h-fit item-wrapper sapi bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/sapi/menu-sapi-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        SOP daging sapi </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.35.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit  item-wrapper sapi bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/sapi/menu-sapi-2.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        SOP iga </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">50.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper sapi bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/sapi/menu-sapi-3.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        iga bakar </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Iga pilihan yang dibakar
+                                        dengan bumbu spesial</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.40.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit  item-wrapper sapi bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/sapi/menu-sapi-4.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        sapi lada hitam</h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Daging sapi dimasak
+                                        dengan bumbu lada hitam pedas gurih</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.30.000</p>
+                                </div>
+                            </li>
+                            <!-- sapi -->
 
-                                    <!-- snack -->
-                                    <li
-                                        class="menu h-fit  item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/snack/menu-snack-1.png" alt=""
-                                                class="w-fit h-full rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                roti bakar chococheese </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/snack/menu-snack-2.png" alt=""
-                                                class="w-fit h-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                french fries </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/snack/menu-snack-3.png" alt=""
-                                                class="w-fit h-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                onion ring </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
+                            <!-- snack -->
+                            <li
+                                class="menu h-fit  item-wrapper snack bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/snack/menu-snack-1.png" alt=""
+                                        class="w-fit h-full rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        roti bakar chococheese </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp15.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper snack bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/snack/menu-snack-2.png" alt=""
+                                        class="w-fit h-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        french fries </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.12.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper snack bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/snack/menu-snack-3.png" alt=""
+                                        class="w-fit h-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        onion ring </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.00</p>
+                                </div>
+                            </li>
 
-                                    <li
-                                        class="menu h-fit item-wrapper snack border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/snack/menu-snack-4.png" alt=""
-                                                class="w-fit h-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                lumpia </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- snack -->
+                            <li
+                                class="menu h-fit item-wrapper snack bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/snack/menu-snack-4.png" alt=""
+                                        class="w-fit h-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        lumpia </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.15.000</p>
+                                </div>
+                            </li>
+                            <!-- snack -->
 
-                                    <!-- minuman -->
-                                    <li
-                                        class="menu h-fit item-wrapper minuman border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/minuman/menu-minuman-1.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                cofee </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="menu h-fit item-wrapper minuman border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class="h-fit grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/minuman/menu-minuman-2.png" alt=""
-                                                class="w-fit rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                fresh drink </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- minuman -->
+                            <!-- minuman -->
+                            <li
+                                class="menu h-fit item-wrapper minuman bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/minuman/menu-minuman-1.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        cofee </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.20.000</p>
+                                </div>
+                            </li>
+                            <li
+                                class="menu h-fit item-wrapper minuman bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class="h-fit grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/minuman/menu-minuman-2.png" alt=""
+                                        class="w-fit rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        fresh drink </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.13.000</p>
+                                </div>
+                            </li>
+                            <!-- minuman -->
 
-                                    <!-- lainya -->
-                                    <li
-                                        class="menu lainya h-fit item-wrapper border border-primaryColorAccent dark:border-darkColorAccent rounded-lg p-2">
-                                        <div class=" grid place-items-center">
-                                            <img loading="lazy" src="assets/menu/lainya/nasi.jpeg" alt=""
-                                                class="w-full h-full rounded-lg">
-                                        </div>
-                                        <div>
-                                            <h3 class="h3 uppercase mt-2 card_tittle">
-                                                nasi putih </h3>
-                                            <p class="section-parag-dark mt-3">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing
-                                                .</p>
-                                            <p class="text-secondaryColor mt-3">Rp.00</p>
-                                        </div>
-                                    </li>
-                                    <!-- lainya -->
-                                </ul>
-                            </div>
+                            <!-- lainya -->
+                            <li
+                                class="menu lainya h-fit item-wrapper bg-gray-100 dark:bg-transparent border border-gray-300 dark:border-darkColorAccent rounded-lg p-2">
+                                <div class=" grid place-items-center">
+                                    <img loading="lazy" src="assets/menu/lainya/nasi.jpeg" alt=""
+                                        class="w-full h-full rounded-lg">
+                                </div>
+                                <div>
+                                    <h3 class="h3 uppercase mt-2 card_tittle text-darkColor dark:text-white">
+                                        nasi putih </h3>
+                                    <p class="section-parag-light dark:section-parag-dark mt-3">Lorem ipsum dolor, sit
+                                        amet consectetur
+                                        adipisicing
+                                        .</p>
+                                    <p class="text-darkColor dark:text-secondaryColor mt-3">Rp.13.000</p>
+                                </div>
+                            </li>
+                            <!-- lainya -->
+                        </ul>
+                    </div>
 
                 </div>
             </div>
         </section>
+
+
         <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
 
 
         <!--~~~~~~~~~~~~~~~ layanan ~~~~~~~~~~~~~~~-->
-        <section id="layanan" class="bg-white dark:bg-darkColorAccent ">
+        <section id="layanan" class="bg-gray-200 dark:bg-darkColorAccent ">
             <div class="container text-center ">
                 <h1 class="tittle-center menu h-fit section-tittle-light dark:section-tittle-dark">Layanan</h1>
                 <div class="tittle-center divider mt-5 mx-auto"></div>
@@ -860,11 +872,12 @@
         <!--~~~~~~~~~~~~~~~ layanan ~~~~~~~~~~~~~~~-->
 
         <!-- FASILITAS -->
-        <section id="fasilitas" class="bg-primaryColor dark:bg-darkColor h-fit flex items-center">
+        <section id="fasilitas" class=" dark:bg-darkColor h-fit flex items-center">
             <div class="container text-center h-fit ">
-                <h1 class="tittle-center section-tittle-dark">fasilitas</h1>
+                <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">fasilitas</h1>
                 <div class="tittle-center divider mt-5 mx-auto"></div>
-                <p class="tittle-center mt-3 section-parag-dark md:px-24 lg:px-52">Momong resto memiliki
+                <p class="tittle-center mt-3 section-parag-light dark:section-parag-dark md:px-24 lg:px-52">Momong resto
+                    memiliki
                     fasilitas
                     yang lengkap untuk memudahkan dan menambah kenyamanan pelanggan, di antaranya:</p>
                 <div class="text-left mt-5 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
@@ -875,7 +888,8 @@
                                 class="w-full h-full rounded-lg">
                         </div>
                         <div>
-                            <h4 class="h4 uppercase mt-2 card_tittle">
+                            <h4 class="text-darkColor dark:text-white :w
+                            h4 uppercase mt-2 card_tittle">
                                 parking zone</h4>
                         </div>
                     </div>
@@ -885,7 +899,8 @@
                                 class="w-full h-full rounded-lg">
                         </div>
                         <div>
-                            <h4 class="h4 uppercase mt-2 card_tittle">
+                            <h4 class="text-darkColor dark:text-white :w
+                            h4 uppercase mt-2 card_tittle">
                                 playground</h4>
                         </div>
                     </div>
@@ -895,7 +910,8 @@
                                 class="w-full h-full rounded-lg">
                         </div>
                         <div>
-                            <h4 class="h4 uppercase mt-2 card_tittle">
+                            <h4 class="text-darkColor dark:text-white :w
+                            h4 uppercase mt-2 card_tittle">
                                 live music</h4>
                         </div>
                     </div>
@@ -905,7 +921,8 @@
                                 class="w-full h-full rounded-lg">
                         </div>
                         <div>
-                            <h4 class="h4 uppercase mt-2 card_tittle">
+                            <h4 class="text-darkColor dark:text-white :w
+                            h4 uppercase mt-2 card_tittle">
                                 meetng room</h4>
                         </div>
                     </div>
@@ -913,19 +930,17 @@
                     <!-- ruang depan -->
                     <div
                         class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
-                        <h1 class="tittle-center section-tittle-dark">ruang depan</h1>
+                        <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">ruang depan</h1>
                         <div class="tittle-center divider mt-5 mx-auto"></div>
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
-                        <div class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg
-                                                    ease-linear duration-200">
+                        <div class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg">
                             <img loading="lazy" src="assets/reservation/ruangan-depan-01.jpeg" alt=""
                                 class="w-full h-full rounded-lg">
                         </div>
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
-                        <div class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg
-                                                                                ease-linear duration-200">
+                        <div class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg">
                             <img loading="lazy" src="assets/reservation/ruangan-depan-02.jpg" alt=""
                                 class="w-full h-full rounded-lg">
                         </div>
@@ -949,7 +964,7 @@
                     <div
                         class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
 
-                        <h1 class="tittle-center section-tittle-dark">ruang samping</h1>
+                        <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">ruang samping</h1>
                         <div class="tittle-center divider mt-5 mx-auto"></div>
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
@@ -986,7 +1001,7 @@
                     <div
                         class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
 
-                        <h1 class="tittle-center section-tittle-dark">ruang atas</h1>
+                        <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">ruang atas</h1>
                         <div class="tittle-center divider mt-5 mx-auto"></div>
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
@@ -1023,7 +1038,7 @@
                     <div
                         class="mt-5 container text-center w-full lg:col-span-4 md:col-span-4 col-span-2 place-content-center h-fit p-1">
 
-                        <h1 class="tittle-center section-tittle-dark">ruang belakang</h1>
+                        <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">ruang belakang</h1>
                         <div class="tittle-center divider mt-5 mx-auto"></div>
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
@@ -1036,8 +1051,7 @@
                     </div>
                     <div class="menu fasilitas-content h-fit item-wrapper rounded-lg p-2 col-span-2">
                         <div
-                            class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg
-                                                                                                                                ease-linear duration-200">
+                            class="h-fit grid place-items-center  dark:bg-darkColorAccent rounded-lg ease-linear duration-200">
                             <img loading="lazy" src="assets/reservation/ruangan-belakang-02.jpg" alt=""
                                 class="w-full h-full rounded-lg">
                         </div>
@@ -1072,7 +1086,7 @@
 
 
         <!-- testimonial -->
-        <section id="testimonial" class="bg-white dark:bg-darkColorAccent">
+        <section id="testimonial" class="bg-gray-200 dark:bg-darkColorAccent">
             <div class="container w-full text-center">
                 <div class="">
                     <h1 class="tittle-center section-tittle-light dark:section-tittle-dark">apa kata mereka</h1>
@@ -1277,7 +1291,7 @@
     <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
 
     <footer>
-        <section id="kontak" class="dark:bg-darkColor lg:h-dvh lg:flex lg:items-center">
+        <section id="kontak" class="bg-primaryColor dark:bg-darkColor lg:h-dvh lg:flex lg:items-center">
             <div class="container w-full h-fit ">
                 <div class="px-2 grid grid-cols-1 lg:grid-cols-7 gap-4 lg:gap-4">
                     <div class="w-full lg:col-span-2">
@@ -1288,9 +1302,6 @@
                             yang nikmat ke meja Anda.Setiap hidangan dipersiapkan dengan cinta dan keahlian,
                             menggunakan bahan-bahan yang berkualitas
                         </p>
-                        <p
-                            class="rounded-md bg-primaryColorAccent dark:bg-darkColorAccent p-2 mt-2 section-parag-dark w-fit ">
-                            Copyright© 2024 | Momongresto</p>
                     </div>
 
                     <div class="list-none capitalize lg:col-span-3">
@@ -1443,10 +1454,14 @@
                         </div>
                     </div>
 
-
-
                 </div>
-            </div>
+                <div class="flex w-full justify-center lg:mt-24">
+
+                    <p class="rounded-md p-2 mt-2 section-parag-dark w-fit ">
+                        Copyright© 2024 | Momongresto</p>
+                </div>
+
+                </di>
         </section>
 
     </footer>
