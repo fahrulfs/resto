@@ -1227,6 +1227,10 @@ section{
   fill: #fff;
 }
 
+.fill-black{
+  fill: #000;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1739,6 +1743,30 @@ section{
       line-height: 1.25rem;
     }
   }
+
+  .md\:section-parag-light{
+    font-family: Inter, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  @media (min-width: 768px){
+    .md\:section-parag-light{
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .md\:section-parag-light{
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
 }
 
 @media (min-width: 1024px){
@@ -1920,6 +1948,30 @@ section{
 
   @media (min-width: 1024px){
     .lg\:section-parag-dark{
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .lg\:section-parag-light{
+    font-family: Inter, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  @media (min-width: 768px){
+    .lg\:section-parag-light{
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .lg\:section-parag-light{
       font-size: 0.875rem;
       line-height: 1.25rem;
     }
