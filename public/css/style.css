@@ -1151,11 +1151,6 @@ section{
   border-color: rgb(255 204 0 / var(--tw-border-opacity));
 }
 
-.bg-blueColor{
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 65 115 / var(--tw-bg-opacity));
-}
-
 .bg-darkColor{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1196,8 +1191,29 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
 
+.bg-purple-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-hero-pattern{
+  background-image: url('./public/assets/pattern1.svg');
+}
+
+.bg-\[url\(\'\.\/public\/assets\/pattern1\.svg\'\)\]{
+  background-image: url('./public/assets/pattern1.svg');
+}
+
+.bg-\[url\(\'\.\/assets\/pattern1\.svg\'\)\]{
+  background-image: url('./assets/pattern1.svg');
+}
+
+.bg-\[url\(\'\.\/public\.assets\/pattern1\.svg\'\)\]{
+  background-image: url('./public.assets/pattern1.svg');
 }
 
 .from-primaryColorAccent{
@@ -1219,16 +1235,20 @@ section{
   background-attachment: fixed;
 }
 
+.bg-center{
+  background-position: center;
+}
+
+.fill-black{
+  fill: #000;
+}
+
 .fill-secondaryColor{
   fill: #FFCC00;
 }
 
 .fill-white{
   fill: #fff;
-}
-
-.fill-black{
-  fill: #000;
 }
 
 .object-cover{

@@ -13,7 +13,6 @@ module.exports = {
 
       backgroundImage: {
         'hero-pattern': "url('./public/assets/pattern1.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
       },
 
       colors: {
