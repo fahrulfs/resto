@@ -158,88 +158,6 @@ sr.reveal(".fasilitas-content")
 
 
 /*~~~~~~~~~~~~~~~ TABS selector ~~~~~~~~~~~~~~~*/
-// const tabs = document.querySelectorAll('.tab-wrapper ul li');
-// const all = document.querySelectorAll('.item-wrapper');
-// const categories = {
-//   paket: document.querySelectorAll('.paket'),
-//   sayur: document.querySelectorAll('.sayur'),
-//   ayam: document.querySelectorAll('.ayam'),
-//   ikan: document.querySelectorAll('.ikan'),
-//   seafood: document.querySelectorAll('.seafood'),
-//   sapi: document.querySelectorAll('.sapi'),
-//   snack: document.querySelectorAll('.snack'),
-//   minuman: document.querySelectorAll('.minuman'),
-//   lainya: document.querySelectorAll('.lainya')
-// };
-
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     tabs.forEach(tab => {
-//       tab.classList.remove('active');
-//     });
-//     tab.classList.add('active');
-
-//     // filtering 
-//     const tabItem = tab.getAttribute('data-tabs');
-//     all.forEach((item) => {
-//       item.style.display = 'none';
-//     });
-
-//     switch (tabItem) {
-//       case "paket":
-//         categories.paket.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "sayur":
-//         categories.sayur.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "ayam":
-//         categories.ayam.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "ikan":
-//         categories.ikan.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "seafood":
-//         categories.seafood.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "sapi":
-//         categories.sapi.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "snack":
-//         categories.snack.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "minuman":
-//         categories.minuman.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       case "lainya":
-//         categories.lainya.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//         break;
-//       default:
-//         all.forEach(item => {
-//           item.style.display = 'block';
-//         });
-//     }
-//   });
-// });
-
-
 const tabs = document.querySelectorAll('.tab-wrapper li');
 const items = document.querySelectorAll('.menu-display .item-wrapper');
 
@@ -313,10 +231,3 @@ document.addEventListener('click', () => {
   fabOptions.style.display = 'none';
 });
 
-// load image
-document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('img[loading="lazy"]');
-  images.forEach(img => {
-    img.loading = 'auto';
-  });
-});
